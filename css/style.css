@@ -1,61 +1,59 @@
 :root {
-    --cherry: #cf0234;
-    --shadow: rgba(0, 0, 0, 0.7);
+  --cherry: #cf0234;
+  --shadow: rgba(0, 0, 0, 0.7);
 }
 
 header div.ppf {
-    background-image: url(./../assets/pfp.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 100%;
-    width: 220px;
-    height: 220px;
-    border:var(--cherry) solid 3px;
-    margin: 30px auto 30px auto;
-    box-shadow: 0px 5px 4px var(--shadow);
+  background-image: url(./../assets/profile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  width: 220px;
+  height: 220px;
+  border: var(--cherry) solid 3px;
+  margin: 30px auto 30px auto;
+  box-shadow: 0px 5px 4px var(--shadow);
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h1 {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 div.card {
-    transition: .2s ease all;
-    font-size: 25px;
-    cursor: pointer;
+  transition: 0.2s ease all;
+  font-size: 25px;
+  cursor: pointer;
 }
 
 .card:hover {
- background-color: var(--cherry);
+  background-color: var(--cherry);
 }
 
 footer {
-
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 footer div a.spectra {
-    font-weight: 700;
-    color: white;
+  font-weight: 700;
+  color: white;
 }
 footer div a.spectra:hover {
-    color: var(--cherry);
+  color: var(--cherry);
 }
 
-
 /* Meme  - pero borrar despues*/
-.patas{
-    font-size: 30px;
-    color: #98ff79;
+.patas {
+  font-size: 30px;
+  color: #98ff79;
 }
 
 .logo {
-    color: #fff;
+  color: #fff;
 }
 
 .gold {
-    color: gold;
+  color: gold;
 }
