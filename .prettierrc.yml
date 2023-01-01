@@ -1,0 +1,12 @@
+# PRETIIER CONFIGURATION for HTML
+tabWidth: 4
+useTabs: true
+singleAttributePerLine: true
+bracketSameLine: true
+parser:
+    - html
+    - css
+    - javascript
+    - yml
+
+jsxBracketSameLine: true
