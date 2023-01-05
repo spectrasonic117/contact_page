@@ -1,0 +1,17 @@
+jsxBracketSameLine: true
+semi: false
+
+overrides:
+  - files:
+      - "*.html"
+      - "css/*.css"
+      - "js/*.js"
+    options:
+      tabWidth: 4
+      useTabs: true
+      singleAttributePerLine: true
+      bracketSameLine: true
+
+  - files: ".prettierrc"
+    options:
+      parse: yaml

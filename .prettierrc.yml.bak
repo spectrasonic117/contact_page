@@ -6,7 +6,6 @@ bracketSameLine: true
 parser:
     - html
     - css
-    - javascript
     - yml
 
 jsxBracketSameLine: true

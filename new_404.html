@@ -1,134 +1,127 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<link
-			rel="icon"
-			href="./favicon.ico"
-			type="image/x-icon" />
-		<meta charset="UTF-8" />
-		<meta
-			http-equiv="X-UA-Compatible"
-			content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<title>404 Page not Found</title>
-	</head>
-	<style>
-		:root {
-			--primary-color: rgb(17, 115, 170);
-			--text_color: #fff;
-		}
+  <head>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 Page not Found</title>
+  </head>
+  <style>
+    :root {
+      --primary-color: rgb(17, 115, 170);
+      --text-color: #fff;
+    }
 
-		body {
-			background-color: var(--primary-color);
-			color: var(--text_color);
-			font-family: sans-serif, system-ui;
-			padding-left: 10%;
-			padding-right: 10%;
-		}
+    body {
+      background-color: var(--primary-color);
+      color: var(--text-color);
+      font-family: sans-serif, system-ui;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
 
-		.container__1 {
-			font-size: 60px;
-			margin-top: 5vh;
-			margin-bottom: 5vh;
-		}
+    .container__1 {
+      font-size: 60px;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+    }
 
-		.container__2 {
-			font-size: 25px;
-			padding-left: 0;
-		}
+    .container__2 {
+      font-size: 25px;
+      padding-left: 0;
+    }
 
-		.container__2 p {
-			display: flex;
-			font-size: 30px;
-			align-items: center;
-			justify-content: center;
-			font-weight: 500;
-			padding-left: 5%;
-			padding-right: 5%;
-		}
+    .container__2 p {
+      display: flex;
+      font-size: 30px;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
 
-		.container__3 {
-			margin-top: 5%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
+    .container__3 {
+      margin-top: 5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-		.container__3 button {
-			background-color: var(--text_color);
-			color: var(--primary-color);
-			border: none;
-			padding: 20px 30px;
-			border-radius: 5px;
-			font-size: 20px;
-			cursor: pointer;
-			font-weight: 700;
-		}
+    .container__3 button {
+      background-color: var(--text-color);
+      color: var(--primary-color);
+      border: none;
+      padding: 20px 30px;
+      border-radius: 5px;
+      font-size: 20px;
+      cursor: pointer;
+      font-weight: 700;
+    }
 
-		@media screen and (max-width: 576px) {
-			body {
-				background-color: var(--primary-color);
-				color: var(--text_color);
-				font-family: sans-serif, system-ui;
-				padding-left: 10%;
-				padding-right: 10%;
-			}
+    @media screen and (max-width: 576px) {
+      body {
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        font-family: sans-serif, system-ui;
+        padding-left: 10%;
+        padding-right: 10%;
+      }
 
-			.container__1 {
-				font-size: 60px;
-			}
-			.container__1 h1 {
-				margin-top: 5%;
-			}
+      .container__1 {
+        font-size: 60px;
+      }
+      .container__1 h1 {
+        margin-top: 5%;
+      }
 
-			.container__2 h1 {
-				font-size: 50px;
-				margin-top: 5vh;
-				margin-bottom: 5vh;
-			}
+      .container__2 h1 {
+        font-size: 50px;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+      }
 
-			.container__2 p {
-				display: flex;
-				font-size: 25px;
-				align-items: center;
-				justify-content: center;
-				font-weight: 500;
-			}
+      .container__2 p {
+        display: flex;
+        font-size: 25px;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+      }
 
-			.container__3 {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-			}
+      .container__3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-			.container__3 button {
-				background-color: var(--text_color);
-				color: var(--primary-color);
-				border: none;
-				padding: 20px 30px;
-				border-radius: 5px;
-				font-size: 20px;
-				cursor: pointer;
-				font-weight: 700;
-			}
-		}
-	</style>
+      .container__3 button {
+        background-color: var(--text_color);
+        color: var(--primary-color);
+        border: none;
+        padding: 20px 30px;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer;
+        font-weight: 700;
+      }
+    }
+  </style>
 
-	<body>
-		<div class="container__1">
-			<h1>:(</h1>
-		</div>
-		<div class="container__2">
-			<h1>404</h1>
-			<p align="justify">
-				This Web page ran into a problem that it couldn't handle, and
-				now needs to back to previous page
-			</p>
-		</div>
-		<div class="container__3">
-			<button onclick="window.history.back()">Go Back</button>
-		</div>
-	</body>
+  <body>
+    <div class="container__1">
+      <h1>:(</h1>
+    </div>
+    <div class="container__2">
+      <h1>404</h1>
+      <p align="left">
+        This Web page ran into a problem that it couldn't handle, and now needs
+        to back to previous page
+      </p>
+    </div>
+    <div class="container__3">
+      <button onclick="window.history.back()">Go Back</button>
+    </div>
+  </body>
 </html>
