@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 
+::-webkit-scrollbar {
+  width: 10px;
+  background: #303030;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #8a8a8a;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #1d1d1d;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #212121;
@@ -10,49 +22,62 @@ a {
   text-decoration: none;
 }
 
-.header {
+.hidden {
+  display: none;
+}
+
+nav {
   width: 100%;
-  height: auto;
+  background-color: #131313;
+}
+
+nav.nav {
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem;
+  padding: 1rem;
   gap: 8rem;
-  position: fixed;
-  background-color: #131313;
+  position: sticky;
+  top: 0;
+  /* background-color: #131313; */
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.9);
-  -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.9);
-  -moz-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
   z-index: 1;
 }
 
-.header_left {
-  width: 80%;
+.nav_left {
+  width: 70%;
   height: 100%;
   display: flex;
   justify-content: left;
   align-items: center;
   flex-direction: row;
-  padding-left: 1rem;
+  padding-left: 5rem;
   padding-right: 1rem;
   gap: 1rem;
 }
 
-.header_right {
-  width: 80%;
+.nav_right {
+  width: 70%;
   height: 100%;
   display: flex;
   justify-content: right;
   align-items: center;
   flex-direction: row;
   padding-left: 1rem;
-  padding-right: 1rem;
+  padding-right: 5rem;
   gap: 1rem;
+}
+
+img.img_nav {
+  width: 8%;
 }
 
 .top {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +85,7 @@ a {
   gap: 8rem;
 }
 
-.top .left {
+.top .top_left {
   width: 50%;
   height: 100%;
   display: flex;
@@ -69,7 +94,7 @@ a {
   align-items: center;
 }
 
-.top .right {
+.top .top_right {
   width: 50%;
   height: 100%;
   display: flex;
@@ -78,17 +103,86 @@ a {
   align-items: center;
 }
 
-.mid {
+img.img_top {
+  width: 60%;
+}
+
+div.mid {
   background-color: #131313;
   width: 100%;
-  height: 25vh;
+  height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12rem;
+  flex-direction: column;
+  padding: 40% 0;
 }
 
-.footer {
+div.mid .tittle {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div.cards_container {
+  padding: 10% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.card {
+  width: 400px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card .circle {
+  width: 150px;
+  height: 150px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  position: relative;
+  top: -85px;
+  left: calc(50% - 75px);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
+}
+
+.card .button_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 60px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #efefef;
+  box-shadow: 2px 2px 4px #c8d0e7, -1px -1px 3px #fff;
+  color: #585858;
+  position: relative;
+  top: calc(100% - 170px);
+
+  left: calc(50% - 100px);
+}
+
+.card .button_info:active {
+  box-shadow: inset 1px 1px 3px #c8d0e7, inset -1px -1px 3px #fff;
+}
+footer {
   font-weight: 600;
   width: 100%;
   height: 100%;
@@ -97,13 +191,153 @@ a {
   align-items: center;
   flex-direction: column;
   bottom: 0;
-  padding: 1rem;
+  margin: 3% 0;
+  gap: 0.5rem;
 }
 
-.footer div a.spectra {
+footer div a.spectra_link {
   font-weight: 700;
   color: white;
 }
-.footer div a.spectra:hover {
+footer div a.spectra_link:hover {
   color: #cf0234;
+}
+
+/* .button {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #efefef;
+  box-shadow: 2px 2px 4px #c8d0e7, -1px -1px 3px #fff;
+  color: #585858;
+}
+
+.button:active {
+  box-shadow: inset 1px 1px 3px #c8d0e7, inset -1px -1px 3px #fff;
+} */
+
+.css-button-sliding-to-left--grey {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #ffffff;
+  overflow: hidden;
+  border: 2px solid #495057;
+  color: #495057;
+}
+.css-button-sliding-to-left--grey:hover {
+  color: #fff;
+}
+.css-button-sliding-to-left--grey:hover:after {
+  width: 100%;
+}
+.css-button-sliding-to-left--grey:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  /* background: #495057; */
+  background: #131313;
+}
+
+/* TABLET */
+
+@media screen and (max-width: 992px) {
+  /* here the Tablet mode CSS */
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 576px) {
+  .nav {
+    position: sticky;
+    top: 0;
+    flex-direction: column;
+    gap: 1rem;
+    display: hidden;
+  }
+
+  .nav_left {
+    display: flex;
+    padding: 0 0 0 25px;
+    font-size: 0.6rem;
+  }
+  .nav_right {
+    display: none;
+  }
+
+  img.img_nav {
+    width: 20%;
+  }
+
+  .top {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    padding: 100px 0 50px 0;
+    flex-direction: column-reverse;
+    gap: 0rem;
+    font-size: 1rem;
+  }
+
+  .top_left {
+    height: 100%;
+  }
+
+  .top_right {
+    height: 100%;
+  }
+
+  img.img_top {
+    width: 100%;
+  }
+
+  div.mid {
+    width: 100%;
+    height: 100%;
+    padding: 20% 0;
+    flex-direction: column;
+    /* gap: 1rem; */
+    z-index: 0;
+  }
+
+  div.cards_container {
+    padding: 30% 0;
+    flex-direction: column;
+    gap: 10rem;
+    z-index: 0;
+  }
+
+  .card {
+    width: 250px;
+    height: 400px;
+    /* padding: 0rem; */
+  }
+
+  footer {
+    margin: 10% 0;
+    gap: 1rem;
+  }
 }

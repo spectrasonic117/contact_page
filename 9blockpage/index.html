@@ -17,41 +17,77 @@
 		<link
 			rel="stylesheet"
 			href="style.css" />
+		<link
+			rel="stylesheet"
+			href="button_reset.css" />
 		<title>Nine Block Studio</title>
 	</head>
 	<body>
-		<div class="header">
-			<div class="header_left">
+		<script src="script.js"></script>
+
+		<!-- NAV section -->
+
+		<nav class="nav">
+			<div class="nav_left">
 				<img
+					class="img_nav"
 					src=".assets/images/logo.png"
 					alt="Nine Block Studio Logo"
-					width="10%" />
+					/>
 				<h1>Nine Block Studio</h1>
 			</div>
-			<div class="header_right">
-				<button>Prices</button>
-				<button>About</button>
+			<div class="nav_right">
+				<a href="#"></href><button class="css-button-sliding-to-left--grey">
+					Prices
+				</button></a>
+				<a href="#"><button class="css-button-sliding-to-left--grey">About</button></a>
 			</div>
-		</div>
+		</nav>
+
+		<!-- TOP section -->
 
 		<div class="top">
-			<div class="left">
+			<div class="top_left">
 				<h1>Nine Block Studio</h1>
 
 				<p>Hacemos Servidores Custom de Minecraft</p>
 			</div>
-			<div class="right">
+			<div class="top_right">
 				<img
+					class="img_top"
 					src=".assets/images/logo.png"
-					alt="Nine Block Studio Logo"
-					width="65%" />
+					alt="Nine Block Studio Logo" />
 			</div>
 		</div>
+
+		<!-- Mid Section -->
+		
 		<div class="mid">
-			<h1>Hered Goes the Mid Section</h1>
+			<div class="tittle">
+				<h1>Prices</h1>
+				<h2>all are in USD</h2>
+			</div>
+			<div class="cards_container">
+				<div class="card">
+					<div class="circle"></div>
+					<div class="button_info">More Info</div>
+				</div>
+				<div class="card">
+					<div class="circle"></div>
+					<div class="button_info">More Info</div>
+				</div>
+				<div class="card">
+					<div class="circle"></div>
+					<div class="button_info">More Info</div>
+				</div>
+			</div>
+			
 		</div>
-		<div class="footer">
-			<p>© 2023 Nine Block Studio</p>
+
+		<!-- Footer -->
+
+		<footer>
+			<p>&copy; <span id="year">2023</span> Nine Block Studio</p>
 			<div class="">
 				<svg
 					viewBox="0 0 128 128"
@@ -75,12 +111,12 @@
 				</svg>
 				by
 				<a
-					class="spectra"
+					class="spectra_link"
 					target="_blank"
 					href="https://twitter.com/spectrasonic117"
 					>Spectrasonic
 				</a>
 			</div>
-		</div>
+		</footer>
 	</body>
 </html>
