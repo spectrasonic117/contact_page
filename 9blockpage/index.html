@@ -1,122 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			http-equiv="X-UA-Compatible"
-			content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="shortcut icon"
-			href=".assets/images/favicon.ico" />
-		<link
-			rel="stylesheet"
-			href="normalize-min.css" />
-		<link
-			rel="stylesheet"
-			href="style.css" />
-		<link
-			rel="stylesheet"
-			href="button_reset.css" />
-		<title>Nine Block Studio</title>
-	</head>
-	<body>
-		<script src="script.js"></script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href=".assets/images/favicon.ico" />
+        <link rel="stylesheet" href="normalize-min.css" />
+        <link rel="stylesheet" href="mini-framework.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="reset.css" />
+        <title>Nine Block Studio</title>
+    </head>
+    <body>
+        <!-- Script Section -->
 
-		<!-- NAV section -->
+        <!-- NAV section -->
 
-		<nav class="nav">
-			<div class="nav_left">
-				<img
-					class="img_nav"
-					src=".assets/images/logo.png"
-					alt="Nine Block Studio Logo"
-					/>
-				<h1>Nine Block Studio</h1>
-			</div>
-			<div class="nav_right">
-				<a href="#"></href><button class="css-button-sliding-to-left--grey">
-					Prices
-				</button></a>
-				<a href="#"><button class="css-button-sliding-to-left--grey">About</button></a>
-			</div>
-		</nav>
+        <nav class="flex flex-center">
+            <a href="./index.html"
+                ><div class="nav_left">
+                    <img
+                        class="img_nav"
+                        src=".assets/images/logo.png"
+                        alt="Nine Block Studio Logo" />
+                    <h1>Nine Block Studio</h1>
+                </div></a
+            >
+            <div class="nav_right">
+                <a href="#"
+                    ><button class="css-button-sliding-to-left--grey">
+                        Prices
+                    </button></a
+                >
+                <a href="#"
+                    ><button class="css-button-sliding-to-left--grey">
+                        About
+                    </button></a
+                >
+            </div>
+        </nav>
 
-		<!-- TOP section -->
+        <!-- TOP section -->
 
-		<div class="top">
-			<div class="top_left">
-				<h1>Nine Block Studio</h1>
+        <div class="top">
+            <div class="top_left">
+                <h1>Nine Block Studio</h1>
 
-				<p>Hacemos Servidores Custom de Minecraft</p>
-			</div>
-			<div class="top_right">
-				<img
-					class="img_top"
-					src=".assets/images/logo.png"
-					alt="Nine Block Studio Logo" />
-			</div>
-		</div>
+                <p class="flex flex-end">
+                    Hacemos Servidores Custom de Minecraft
+                </p>
+            </div>
+            <div class="top_right">
+                <img
+                    class="img_top"
+                    src=".assets/images/logo.png"
+                    alt="Nine Block Studio Logo" />
+            </div>
+        </div>
 
-		<!-- Mid Section -->
-		
-		<div class="mid">
-			<div class="tittle">
-				<h1>Prices</h1>
-				<h2>all are in USD</h2>
-			</div>
-			<div class="cards_container">
-				<div class="card">
-					<div class="circle"></div>
-					<div class="button_info">More Info</div>
-				</div>
-				<div class="card">
-					<div class="circle"></div>
-					<div class="button_info">More Info</div>
-				</div>
-				<div class="card">
-					<div class="circle"></div>
-					<div class="button_info">More Info</div>
-				</div>
-			</div>
-			
-		</div>
+        <!-- Mid Section -->
 
-		<!-- Footer -->
+        <div class="mid flex flex-center flex-column">
+            <div class="tittle">
+                <h1>Prices</h1>
+                <h2>all are in USD</h2>
+            </div>
+            <div class="flex flex-center cards_container">
+                <div class="card">
+                    <div class="circle"></div>
+                    <div class="flex flex-center button_info">More Info</div>
+                </div>
+                <div class="card">
+                    <div class="circle"></div>
+                    <div class="flex flex-center button_info">More Info</div>
+                </div>
+                <div class="card">
+                    <div class="circle"></div>
+                    <div class="flex flex-center button_info">More Info</div>
+                </div>
+            </div>
+        </div>
 
-		<footer>
-			<p>&copy; <span id="year">2023</span> Nine Block Studio</p>
-			<div class="">
-				<svg
-					viewBox="0 0 128 128"
-					width="22px">
-					<g>
-						<polygon
-							fill="#219CF0"
-							points="86.046,47.348 72.457,60.937 98.407,86.886 72.457,112.932 86.046,126.521 123.673,88.536 125.453,86.756 " />
-						<polygon
-							fill="#219CF0"
-							points="41.807,47.348 2.4,86.756 4.797,89.153 41.807,126.521 55.396,112.932 29.48,86.854 55.396,60.937" />
-					</g>
-				</svg>
-				with
-				<svg
-					viewBox="0 0 115 128"
-					width="22px">
-					<path
-						fill="#E93D46"
-						d="M100.104,53.184c-9.095-9.397-23.841-9.397-32.935,0c-0.935,0.966-1.769,1.998-2.512,3.075l-1.704,1.761l-0.72-0.744 c-0.743-1.077-1.577-2.108-2.512-3.075c-9.095-9.397-23.841-9.397-32.935,0c-8.939,9.236-9.086,24.108-0.452,33.537l-0.07,0.012 l0.404,0.364c0,0,0-0.114,0-0.114s0.193,0,0.193,0l36.038,37.387l20.202-20.833l0.082,0.123l17.391-17.958l-0.014-0.005 C109.192,77.285,109.043,62.42,100.104,53.184z" />
-				</svg>
-				by
-				<a
-					class="spectra_link"
-					target="_blank"
-					href="https://twitter.com/spectrasonic117"
-					>Spectrasonic
-				</a>
-			</div>
-		</footer>
-	</body>
+        <!-- Footer -->
+
+        <footer class="flex flex-center flex-column">
+            <p>
+                &copy;
+                <strong id="year"><script src="script.js"></script></strong>
+                Nine Block Studio
+            </p>
+            <div class="spectra-sign">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    width="24px"
+                    fill="#219CF0">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path
+                        d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" />
+                </svg>
+                with
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 0 24 24"
+                    width="24px"
+                    fill="#E93D46">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+                by
+                <a
+                    class="spectra_link"
+                    target="_blank"
+                    href="https://twitter.com/spectrasonic117"
+                    >Spectrasonic
+                </a>
+            </div>
+        </footer>
+    </body>
 </html>

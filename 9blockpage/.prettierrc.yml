@@ -1,0 +1,23 @@
+---
+semi: true
+overrides:
+  - files: "*.js"
+    options:
+      tabWidth: 4
+      bracketSpacing: true
+  - files:
+      - "*.html"
+      # - legacy/**/*.js
+    options:
+      bracketSameLine: true
+      tabWidth: 4
+      htmlWhitespaceSensitivity: "strict"
+  - files:
+      - "*.css"
+      - "*.scss"
+    options:
+      useTabs: true
+      tabWidth: 2
+      singleQuote: true
+      trailingComma: "none"
+      bracketSpacing: true
